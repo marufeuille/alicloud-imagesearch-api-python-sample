@@ -8,7 +8,6 @@ img_file = 'img.jpg'
 b64_img = base64.b64encode(open(img_file, 'rb').read()).decode('ascii')
 b64_filename = base64.b64encode(img_file.encode('latin-1')).decode('ascii')
 
-
 client = AcsClient(os.getenv("ACCESSKEYID"), os.getenv("ACCESSKEYSECRET"), 'ap-northeast-1')
 request = CommonRequest()
 request.set_domain('imagesearch.ap-northeast-1.aliyuncs.com')
